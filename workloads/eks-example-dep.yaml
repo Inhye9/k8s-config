@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,11 +20,11 @@ spec:
     spec:
       containers:
       - name: eks-example
-        image: 777165799199.dkr.ecr.us-east-2.amazonaws.com/eks-example:0a05cec0
-        imagePullPolicy: Always 
+        image: 777165799199.dkr.ecr.us-east-2.amazonaws.com/eks-example:db12899b
+        imagePullPolicy: Always
         resources:
-          requests: 
-            memory: "64Mi" 
+          requests:
+            memory: "64Mi"
             cpu: "200m"
           limits:
             memory: "64Mi"
