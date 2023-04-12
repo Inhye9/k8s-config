@@ -6,10 +6,9 @@ metadata:
   labels:
     app: eks-example
   annotations:
-    # Container Image Automated Updates
     flux.weave.works/automated: true 
 spec:
-  replicas: 1 //*To-DO*
+  replicas: 1
   selector:
     matchLabels:
       app: eks-example
@@ -20,12 +19,12 @@ spec:
     spec:
       containers:
       - name: eks-example
-        image: 777165799199.dkr.ecr.us-east-2.amazonaws.com/eks-example //*TO-DO*
+        image: 777165799199.dkr.ecr.us-east-2.amazonaws.com/eks-example 
         imagePullPolicy: IfNotPresent
                 resources:
           requests: 
             memory: "64Mi" 
-            cpu: "200m" //*TO-DO*
+            cpu: "200m" 
           limits:
             memory: "64Mi"
             cpu: "400m"
