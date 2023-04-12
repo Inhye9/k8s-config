@@ -21,7 +21,7 @@ spec:
       - name: eks-example
         image: 777165799199.dkr.ecr.us-east-2.amazonaws.com/eks-example 
         imagePullPolicy: IfNotPresent
-                resources:
+        resources:
           requests: 
             memory: "64Mi" 
             cpu: "200m" 
